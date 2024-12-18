@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>Suore.it</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<!--
+    <style>
+        body{
+           background-color:#ffffff;
+        }
+        
+        header{
+            background-position: center;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#ffa800;
+            font-size: 50px;   
+        }
+        
+       nav  {
+           background-color:#f0e8a5;
+           
+           
+        }
+    
+    </style>
+-->
+</head>
+<body>
+    
+    <header> Suore on-line 
+    </header>   
+    
+    <!--
+        <nav>
+            
+            <ul>
+                <li>
+                    <h1>Online</h1>
+                    <ul>  
+                
+                        <li><a href="#">prega con noi</a></li>
+                        <li><a href="#">rosario</a></li>
+                        <li><a href="#">messa on-line</a></li>
+                    </ul>   
+                </li>        
+            </ul>   
+    
+    
+       
+            <a></a><h3>Prenota</h3>
+            <ul>
+        
+                <li><h4>battesimo</h4></li>
+                <li><h4>comunione</h4></li>
+                <li><h4>matrimonio</h4></li>
+                    </ul>
+            
+        </nav>
+    -->
+        <nav>
+            <ul>
+               <li class="dropdown">
+                  <a href="#" class="dropbtn">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#"></a>Prega con noi</a></li>
+                        <li><a href="#"></a>Rosario</a></li>
+                        <li><a href="#"></a>Messa on line</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>    
+ 
+
+        <section>
+            <h3>Unisciti a noi</h3>
+            <form>
+                <label for= nome> Nome: </label>
+                <input type= "text" id= "nome" name= "nome" required><br><br>
+                <label for= cognome> Cognome: </label>
+                <input type= "text" id= "cognome" name= "cognome" required><br><br>
+                
+                <label for="citta"> Luogo di nascita:</label>
+               <select name= "citta" id="citta"> 
+                    <option value="">Taranto</option>
+                    <option value="">Bari</option>
+                    <option value="">BAT</option>
+                    <option value="">Brindisi</option>
+                    <option value="">Foggia</option>
+                    <option value="">Lecce</option>       
+                </select><br><br> 
+                
+                <label for= datadinascita> Data di nascita: </label>
+                <input type= "date" id= "datadinascita" name= "datadinascita" required><br><br>  
+                <label for= codicefiscale> Codice fiscale: </label>
+                <input type= "text" id= "codicefiscale" name= "codicefiscale" required><br><br>
+                
+            </form>
+                
+            
+    
+        </section>
+
+</body>
+</html>
