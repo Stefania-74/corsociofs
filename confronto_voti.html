@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=ita>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width device-width, initial-scale=1.0">
+    <title>Confronto voti</title>
+    <link rel="stylesheet" type="text/css" href="confronto_voti.css">
+</head>
+<body>
+    <h1>Confronto di tre voti</h1>
+    <form>
+        <label for Nome="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Inserisci il nome"><br><br>
+        <label for Cognome="cognome">cognome</label>
+        <input type="text" id="cognome" placeholder="Inserisci il cognome"><br><br>
+        <label for voto1="voto1">Voto</label>
+        <input type="number" id="voto1" placeholder="Inserisci il voto"><br><br>
+
+        <label for Nome="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Inserisci il nome"><br><br>
+        <label for Cognome="cognome">cognome</label>
+        <input type="text" id="cognome" placeholder="Inserisci il cognome"><br><br>
+        <label for voto2="voto2">Voto</label>
+        <input type="number" id="voto2" placeholder="Inserisci il voto"><br><br>
+
+        <label for Nome="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Inserisci il nome"><br><br>
+        <label for Cognome="cognome">cognome</label>
+        <input type="text" id="cognome" placeholder="Inserisci il cognome"><br><br>
+        <label for voto3="voto3">Voto</label>
+        <input type="number" id="voto3" placeholder="Inserisci il voto"><br><br>
+
+        <button type="button" onclick="confronto_voti()">Confronta</button>
+    </form>
+
+        <p id="confronta"></p>
+
+        <script>
+            function confronto_voti() {
+                var voto1= document.getElementById("voto1").value;
+                var voto2= document.getElementById("voto2").value;
+                var voto3= document.getElementById("voto3").value;
+
+                var confronta= "";
+                if (voto1>voto2 && voto1>voto3) {
+                    confronta= "Il primo voto è piu il alto";
+                }
+                else if (voto2>voto1 && voto2>voto3) {
+                    confronta= "il secondo voto è il piu alto";
+                }
+                else if (voto3>voto1 && voto3>voto2) {
+                    confronta= "il terzo voto è il più alto";
+                }
+                else{
+                    confronta= "i tre voti sono uguali";
+                }
+            
+            document.getElementById("confronta").innerText= confronta;
+            }
+        </script>
